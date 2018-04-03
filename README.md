@@ -6,13 +6,13 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID 4.3 - Authenticated Shortcode Tags Cross-Site Scripting (XSS)
+1. (Required) Vulnerability Name or ID: 4.3 - Authenticated Shortcode Tags Cross-Site Scripting (XSS)
   - [X] Summary: 
     - Vulnerability types:XSS
     - Tested in version:4.0
     - Fixed in version: 4.3
   - [X] GIF Walkthrough:
-    <img src='Clickme.gif' title='Clickme XSS' width='' alt='' />
+    - <img src='Clickme.gif' title='Clickme XSS' width='' alt='' />
   - [X] Steps to recreate: 
     - add a new post
     - insert ```TEST!!![caption width="1" caption='<a href="' ">]</a><a href="http://onMouseOver='alert(1)'">Click me</a>``` on the context
@@ -20,24 +20,32 @@ Time spent: **X** hours spent in total
   - [X] Affected source code:
     - [Link 1](http://blog.knownsec.com/2015/09/wordpress-vulnerability-analysis-cve-2015-5714-cve-2015-5715/)
     - [Link 2](http://blog.checkpoint.com/2015/09/15/finding-vulnerabilities-in-core-wordpress-a-bug-hunters-trilogy-part-iii-ultimatum/)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
+1. (Required) Vulnerability Name or ID: 4.2.2 - Authenticated Stored Cross-Site Scripting (XSS)
+  - [X] Summary: 
+    - Vulnerability types:XSS
     - Tested in version:4.0
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
+    - Fixed in version:4.2.2 
+  - [X] GIF Walkthrough: 
+    - <img src='Hello.gif' title='Hello XSS' width='' alt='' />
+  - [X] Steps to recreate: 
+    - add a new post
+    - insert ```<a href="[caption code=">]</a><a title=" onmouseover=alert('XAIO_HE') ">link</a>``` on the context
+    - publish and view post or click on preview
+  - [X] Affected source code:
+    - [Link 1](https://klikki.fi/adv/wordpress3.html)
+1. (Required) Vulnerability Name or ID: 2.5-4.6 - Authenticated Stored Cross-Site Scripting via Image Filename
+  - [X] Summary: 
+    - Vulnerability types:XSS
     - Tested in version:4.0
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - Fixed in version:4.6 
+  - [X] GIF Walkthrough: 
+    - <img src='pic.gif' title='Pic XSS' width='' alt='' />
+  - [X] Steps to recreate: 
+    - add a new post
+    - insert ```cengizhansahinsumofpwn<img src=a onerror=alert(document.cookie)>.jpg``` on the context
+    - publish and view post or click on preview
+  - [X] Affected source code:
+    - [Link 1](https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_vulnerability_in_wordpress_due_to_unsafe_processing_of_file_names.html)
 1. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
