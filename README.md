@@ -6,12 +6,12 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
+1. (Required) Vulnerability Name or ID 4.3 - Authenticated Shortcode Tags Cross-Site Scripting (XSS)
+  - [X] Summary: 
     - Vulnerability types:
     - Tested in version:4.0
-    - Fixed in version: 
-  - [ ] GIF Walkthrough:
+    - Fixed in version: 4.3
+  - [X] GIF Walkthrough:
     <img src='Clickme.gif' title='Clickme XSS' width='' alt='' />
     
   - [ ] Steps to recreate: 
