@@ -12,7 +12,7 @@ Time spent: **X** hours spent in total
     - Tested in version:4.0
     - Fixed in version: 4.3
   - [X] GIF Walkthrough:
-    - <img src='Clickme.gif' title='Clickme XSS' width='' alt='' />
+    - <img src='Clickme.gif' title='Authenticated Shortcode Tags Cross-Site Scripting' width='' alt='' />
   - [X] Steps to recreate: 
     - add a new post
     - insert ```TEST!!![caption width="1" caption='<a href="' ">]</a><a href="http://onMouseOver='alert(1)'">Click me</a>``` on the context
@@ -26,7 +26,7 @@ Time spent: **X** hours spent in total
     - Tested in version:4.0
     - Fixed in version:4.2.2 
   - [X] GIF Walkthrough: 
-    - <img src='Hello.gif' title='Hello XSS' width='' alt='' />
+    - <img src='Hello.gif' title='Authenticated Stored Cross-Site Scripting' width='' alt='' />
   - [X] Steps to recreate: 
     - add a new post
     - insert ```<a href="[caption code=">]</a><a title=" onmouseover=alert('XAIO_HE') ">link</a>``` on the context
@@ -39,32 +39,36 @@ Time spent: **X** hours spent in total
     - Tested in version:4.0
     - Fixed in version:4.6 
   - [X] GIF Walkthrough: 
-    - <img src='pic.gif' title='Pic XSS' width='' alt='' />
+    - <img src='pic.gif' title='Authenticated Stored Cross-Site Scripting via Image Filename' width='' alt='' />
   - [X] Steps to recreate: 
     - add a new post
     - insert ```cengizhansahinsumofpwn<img src=a onerror=alert(document.cookie)>.jpg``` on the context
     - publish and view post or click on preview
   - [X] Affected source code:
     - [Link 1](https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_vulnerability_in_wordpress_due_to_unsafe_processing_of_file_names.html)
+1. (Optional) Vulnerability Name or ID: 4.0-4.7.2 - Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds
+  - [X] Summary: 
+    - Vulnerability types:XSS
+    - Tested in version:4.0
+    - Fixed in version: 4.7.2
+  - [X] GIF Walkthrough: 
+    - <img src='youtube.gif' title='Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds' width='' alt='' />
+  - [X] Steps to recreate: 
+    - add a new post
+    - insert ```https://youtube[.]com/watch?v=abc<svg onload=alert(1)>``` on the context
+    - publish and view post or click on preview
+  - [X] Affected source code:
+    - [Link 1](https://blog.sucuri.net/2017/03/stored-xss-in-wordpress-core.html)
 1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
+  - [X] Summary: 
+    - Vulnerability types:User Enumeration
     - Tested in version:4.0
     - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:4.0
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php) 
-
+  - [X] GIF Walkthrough: 
+    - <img src='user 1.gif' title='USER' width='' alt='' />
+  - [X] Steps to recreate: 
+    - On the login page, anyone has the ability to find a list of valid user names on a WordPress site
+  - [] Affected source code:
 ## Assets
 
 List any additional assets, such as scripts or files
