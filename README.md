@@ -17,7 +17,8 @@ Time spent: **X** hours spent in total
   - [X] Steps to recreate: 
   
     -add a new post
-    -insert ```TEST!!![caption width="1" caption='<a href="' ">]</a><a href="http://onMouseOver='alert(1)'">Click me</a>``` on the    context
+    
+    -insert ```TEST!!![caption width="1" caption='<a href="' ">]</a><a href="http://onMouseOver='alert(1)'">Click me</a>``` on the context
     -publish and view post
   - [X] Affected source code:
     - [Link 1](http://blog.knownsec.com/2015/09/wordpress-vulnerability-analysis-cve-2015-5714-cve-2015-5715/)
