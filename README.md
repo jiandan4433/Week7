@@ -15,6 +15,7 @@ Time spent: **X** hours spent in total
     <img src='Clickme.gif' title='Clickme XSS' width='' alt='' />
     
   - [X] Steps to recreate: 
+  
     -add a new post
     -insert ```TEST!!![caption width="1" caption='<a href="' ">]</a><a href="http://onMouseOver='alert(1)'">Click me</a>``` on the    context
     -publish and view post
